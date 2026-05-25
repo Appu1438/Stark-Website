@@ -1,44 +1,53 @@
-import { Suspense, lazy } from 'react';
+import { Suspense, lazy, useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
+import PageLoader from './components/pageLoader/PageLoader';
 
-// Lazy-load pages for code-splitting
+// Lazy-load pages
 const Home = lazy(() => import('./pages/home/Home'));
-// Stub pages – add real implementations as you build them out
 const About = lazy(() => import('./pages/about/About'));
-const Services= lazy(() => import('./pages/services/Services'));
-const Driver  = lazy(() => import('./pages/driver/Driver'));
-const Download= lazy(() => import('./pages/download/Download'));
-const Blog    = lazy(() => import('./pages/blog/Blog'));
+const Services = lazy(() => import('./pages/services/Services'));
+const Driver = lazy(() => import('./pages/driver/Driver'));
+const Download = lazy(() => import('./pages/download/Download'));
+const Blog = lazy(() => import('./pages/blog/Blog'));
 const Contact = lazy(() => import('./pages/contact/Contact'));
 
-function PageLoader() {
-  return (
-    <div className="page-loader">
-      <div className="page-loader__spinner" />
-    </div>
-  );
-}
-
 export default function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Show loader for 2 seconds
+  if (loading) {
+    return <PageLoader />;
+  }
+
   return (
     <BrowserRouter>
-      <Header />
-      <main>
-        <Suspense fallback={<PageLoader />}>
+      <Suspense fallback={<PageLoader />}>
+        <Header />
+        <main>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-             <Route path="/services"  element={<Services />} />
-          <Route path="/driver"    element={<Driver />} />
-            <Route path="/download"  element={<Download />} />
-             <Route path="/blog"      element={<Blog />} />
-            <Route path="/contact"   element={<Contact />} /> 
+            <Route path="/services" element={<Services />} />
+            <Route path="/driver" element={<Driver />} />
+            <Route path="/download" element={<Download />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
-        </Suspense>
-      </main>
-      <Footer />
+        </main>
+
+        <Footer />
+      </Suspense>
     </BrowserRouter>
   );
 }
