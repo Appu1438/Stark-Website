@@ -109,6 +109,8 @@ export default function Driver() {
         <meta property="og:title" content="Drive With Stark Cabs - Driver App" />
         <meta property="og:description" content="Become a Stark Cabs driver partner in Kerala and earn flexible income with the Stark Driver App." />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://starkcabs.in/driver" />
+
       </Helmet>
 
       {/* ── PAGE HERO — CSS keyframe, no observer needed ─────────────────── */}

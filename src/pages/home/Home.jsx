@@ -174,6 +174,8 @@ export default function Home() {
                 <meta property="og:url" content="https://starkcabs.in/" />
                 <meta name="geo.region" content="IN-KL" />
                 <meta name="geo.placename" content="Kerala" />
+                <link rel="canonical" href="https://starkcabs.in/" />
+
             </Helmet>
 
             {/* ── HERO ── */}

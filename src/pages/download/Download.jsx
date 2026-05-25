@@ -65,6 +65,8 @@ export default function Download() {
         <meta property="og:title" content="Download Stark Rider App - Taxi Booking in Kerala" />
         <meta property="og:description" content="Download the Stark Rider App and book rides instantly with verified drivers in Kerala." />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://starkcabs.in/download" />
+
       </Helmet>
 
       {/* PAGE HERO */}

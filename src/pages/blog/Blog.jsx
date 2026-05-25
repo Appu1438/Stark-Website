@@ -82,6 +82,8 @@ export default function Blog() {
                     content="Discover travel tips, ride booking advice and updates about taxi services in Kerala from Stark Cabs."
                 />
                 <meta property="og:type" content="website" />
+                <link rel="canonical" href="https://starkcabs.in/blog" />
+
             </Helmet>
 
             <div className="blog-page-wrapper">

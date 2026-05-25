@@ -76,6 +76,8 @@ export default function Contact() {
                 <meta property="og:title" content="Contact Stark Cabs - Taxi Service in Kerala" />
                 <meta property="og:description" content="Get in touch with Stark Cabs for ride booking, driver registration and customer support in Kerala." />
                 <meta property="og:type" content="website" />
+                <link rel="canonical" href="https://starkcabs.in/contact" />
+
             </Helmet>
 
             {/* PAGE HERO */}
