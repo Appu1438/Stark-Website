@@ -11,7 +11,8 @@
     "postbuild": "react-snap"
   },
   "reactSnap": {
-    "inlineCss": true
+    "inlineCss": true,
+    "source": "dist"
   },
   "dependencies": {
     "react": "^19.2.6",
