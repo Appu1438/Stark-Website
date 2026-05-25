@@ -26,7 +26,7 @@ export default function App() {
   }, []);
 
   // Show loader for 2 seconds
-  if (loading) {
+  if (loading && !navigator.userAgent.includes("ReactSnap")) {
     return <PageLoader />;
   }
 
