@@ -256,7 +256,7 @@ export default function Home() {
                     <div className="about-grid">
                         {/* Image */}
                         <div className="about-img-wrap reveal">
-                            <img src="assets/images/hero_bg_1.jpg" alt="About Stark Cabs – Reliable cab service in Kerala" />
+                            <img src="assets/images/about.jpg" alt="About Stark Cabs – Reliable cab service in Kerala" />
                             <div className="about-img-overlay" aria-hidden="true" />
                             <div className="about-tag">
                                 <div className="about-tag-icon"><IconCheck /></div>
