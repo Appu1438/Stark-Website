@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import PageLoader from './components/pageLoader/PageLoader';
+import NotFound from './pages/notFound/NotFound';
 
 // Lazy-load pages
 const Home = lazy(() => import('./pages/home/Home'));
@@ -43,6 +44,8 @@ export default function App() {
             <Route path="/download" element={<Download />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
+
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
 
