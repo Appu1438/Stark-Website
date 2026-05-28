@@ -1,10 +1,8 @@
 import { Suspense, lazy, useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
 import PageLoader from './components/pageLoader/PageLoader';
 import NotFound from './pages/notFound/NotFound';
+import MainLayout from './layout/MainLayout';
 
 // Lazy-load pages
 const Home = lazy(() => import('./pages/home/Home'));
@@ -34,22 +32,23 @@ export default function App() {
   return (
     <BrowserRouter>
       <Suspense fallback={<PageLoader />}>
-        <Header />
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/driver" element={<Driver />} />
-            <Route path="/download" element={<Download />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route element={<MainLayout />}>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/driver" element={<Driver />} />
+              <Route path="/download" element={<Download />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/contact" element={<Contact />} />
 
-            <Route path="*" element={<NotFound />} />
+              <Route path="*" element={<NotFound />} />
+            </Route>
+
           </Routes>
         </main>
 
-        <Footer />
       </Suspense>
     </BrowserRouter>
   );
