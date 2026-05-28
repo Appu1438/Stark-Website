@@ -1,5 +1,5 @@
 import { Suspense, lazy, useEffect, useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import PageLoader from './components/pageLoader/PageLoader';
 import NotFound from './pages/notFound/NotFound';
 import MainLayout from './layout/MainLayout';
@@ -30,7 +30,6 @@ export default function App() {
   }
 
   return (
-    <BrowserRouter>
       <Suspense fallback={<PageLoader />}>
         <main>
           <Routes>
@@ -50,6 +49,5 @@ export default function App() {
         </main>
 
       </Suspense>
-    </BrowserRouter>
   );
 }
