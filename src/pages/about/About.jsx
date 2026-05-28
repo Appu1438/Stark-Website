@@ -143,6 +143,14 @@ export default function About() {
         <meta property="og:description" content="Discover Stark Cabs, a trusted ride booking platform offering taxi services in Kerala." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://starkcabs.in/about" />
+
+          <link rel="icon" href="/assets/images/favicon.png" sizes="any" />
+  <meta property="og:image" content="https://starkcabs.in/assets/images/favicon.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:image:type" content="image/png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://starkcabs.in/assets/images/favicon.png" />
       </Helmet>
 
       <PageHero
