@@ -94,23 +94,31 @@ function IconAndroid() {
 ───────────────────────────────────────── */
 function useScrollReveal() {
     useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((e) => {
-                    if (e.isIntersecting) {
-                        e.target.classList.add('visible');
-                        observer.unobserve(e.target);
-                    }
-                });
-            },
-            { threshold: 0.1 }
-        );
 
         const elements = document.querySelectorAll('.reveal');
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+
+                        observer.unobserve(entry.target);
+                    }
+
+                });
+            },
+            {
+                threshold: 0.1,
+                rootMargin: '50px'
+            }
+        );
 
         elements.forEach((el) => observer.observe(el));
 
         return () => observer.disconnect();
+
     }, []);
 }
 
