@@ -47,66 +47,112 @@ export const SERVICES = [
 
 
 export const WHY_CARDS = [
-    { img: 'assets/images/car-1.webp', title: '⚡ Fast Ride Booking', desc: 'Book a cab instantly with quick driver matching anywhere in Kerala.' },
-    { img: 'assets/images/car-2.webp', title: '💰 Affordable Pricing', desc: 'Competitive fares with transparent pricing — no hidden charges.' },
-    { img: 'assets/images/car-3.webp', title: '✅ Verified Drivers', desc: 'All Stark drivers are background-checked for your safety.' },
-    { img: 'assets/images/car-4.webp', title: '📍 Real-Time Tracking', desc: 'Track your ride live with GPS and instant driver location updates.' },
-    { img: 'assets/images/car-5.webp', title: '🏙️ Local City Rides', desc: 'Quick rides within Kerala for daily commutes, shopping, and more.' },
-    { img: 'assets/images/car-6.webp', title: '✈️ Airport Transfers', desc: 'Reliable pickup and drop services to and from nearby airports.' },
-    { img: 'assets/images/car-7.webp', title: '🚗 Comfortable Vehicles', desc: 'Clean, well-maintained cars with professional, courteous drivers.' },
-    { img: 'assets/images/car-8.webp', title: '🌙 24/7 Availability', desc: 'Book Stark Cabs any time of day or night — we\'re always ready.' },
+    {
+        img: 'assets/images/car-1.webp',
+        alt: 'Fast ride booking with Stark Cabs Kerala',
+        title: '⚡ Fast Ride Booking',
+        desc: 'Book a cab instantly with quick driver matching anywhere in Kerala.'
+    },
+
+    {
+        img: 'assets/images/car-2.webp',
+        alt: 'Affordable taxi pricing in Kerala with Stark Cabs',
+        title: '💰 Affordable Pricing',
+        desc: 'Competitive fares with transparent pricing — no hidden charges.'
+    },
+
+    {
+        img: 'assets/images/car-3.webp',
+        alt: 'Verified Stark Cabs drivers for safe travel',
+        title: '✅ Verified Drivers',
+        desc: 'All Stark drivers are background-checked for your safety.'
+    },
+
+    {
+        img: 'assets/images/car-4.webp',
+        alt: 'Real-time taxi tracking in Stark Cabs app',
+        title: '📍 Real-Time Tracking',
+        desc: 'Track your ride live with GPS and instant driver location updates.'
+    },
+
+    {
+        img: 'assets/images/car-5.webp',
+        alt: 'Local city taxi rides in Kerala',
+        title: '🏙️ Local City Rides',
+        desc: 'Quick rides within Kerala for daily commutes, shopping, and more.'
+    },
+
+    {
+        img: 'assets/images/car-6.webp',
+        alt: 'Airport pickup and drop taxi service in Kerala',
+        title: '✈️ Airport Transfers',
+        desc: 'Reliable pickup and drop services to and from nearby airports.'
+    },
+
+    {
+        img: 'assets/images/car-7.webp',
+        alt: 'Comfortable and clean vehicles from Stark Cabs',
+        title: '🚗 Comfortable Vehicles',
+        desc: 'Clean, well-maintained cars with professional, courteous drivers.'
+    },
+
+    {
+        img: 'assets/images/car-8.webp',
+        alt: '24 hour taxi booking service in Kerala',
+        title: '🌙 24/7 Availability',
+        desc: 'Book Stark Cabs any time of day or night — we\'re always ready.'
+    },
 ];
 
-
 export const DETAIL_SERVICES = [
-  {
-    img: 'assets/images/car-5.webp',
-    alt: 'Local City Rides in Kerala',
-    tag: '🏙️ City Rides',
-    title: 'Local City Rides',
-    desc: 'Quick, comfortable rides within Kerala for your daily commute, shopping trips, medical visits, or any local travel need. Arrive on time, every time.',
-    delay: '',
-  },
-  {
-    img: 'assets/images/car-6.webp',
-    alt: 'Airport Transfers from Kerala',
-    tag: '✈️ Airport',
-    title: 'Airport Transfers',
-    desc: 'Stress-free pickup and drop services from Kerala to Cochin International Airport and other nearby airports. Never miss a flight again.',
-    delay: 'reveal-delay-1',
-  },
-  {
-    img: 'assets/images/car-1.webp',
-    alt: 'Outstation Trips from Kerala',
-    tag: '🛣️ Outstation',
-    title: 'Outstation Trips',
-    desc: 'Planning a trip outside Kerala? Our verified drivers are available for comfortable, safe long-distance journeys to any destination in Kerala and beyond.',
-    delay: '',
-  },
-  {
-    img: 'assets/images/car-2.webp',
-    alt: 'Daily Commute Rides in Kerala',
-    tag: '🔁 Daily Commute',
-    title: 'Daily Commute Rides',
-    desc: 'Start and end your workday right with reliable, on-time cab service. Perfect for professionals who need a dependable ride every single day.',
-    delay: 'reveal-delay-1',
-  },
-  {
-    img: 'assets/images/car-7.webp',
-    alt: 'Comfortable Vehicles with Stark Cabs',
-    tag: '🚗 Premium Comfort',
-    title: 'Comfortable Vehicles',
-    desc: 'Travel in clean, well-maintained vehicles driven by professional, courteous drivers. Your comfort is our priority on every trip, no matter the distance.',
-    delay: '',
-  },
-  {
-    img: 'assets/images/car-8.webp',
-    alt: '24/7 Cab Availability Kerala',
-    tag: '🌙 Round the Clock',
-    title: 'Night & Late Rides',
-    desc: 'Need a cab late at night or early in the morning? Stark Cabs is available 24/7 with verified drivers ready to safely get you home at any hour.',
-    delay: 'reveal-delay-1',
-  },
+    {
+        img: 'assets/images/car-5.webp',
+        alt: 'Local City Rides in Kerala',
+        tag: '🏙️ City Rides',
+        title: 'Local City Rides',
+        desc: 'Quick, comfortable rides within Kerala for your daily commute, shopping trips, medical visits, or any local travel need. Arrive on time, every time.',
+        delay: '',
+    },
+    {
+        img: 'assets/images/car-6.webp',
+        alt: 'Airport Transfers from Kerala',
+        tag: '✈️ Airport',
+        title: 'Airport Transfers',
+        desc: 'Stress-free pickup and drop services from Kerala to Cochin International Airport and other nearby airports. Never miss a flight again.',
+        delay: 'reveal-delay-1',
+    },
+    {
+        img: 'assets/images/car-1.webp',
+        alt: 'Outstation Trips from Kerala',
+        tag: '🛣️ Outstation',
+        title: 'Outstation Trips',
+        desc: 'Planning a trip outside Kerala? Our verified drivers are available for comfortable, safe long-distance journeys to any destination in Kerala and beyond.',
+        delay: '',
+    },
+    {
+        img: 'assets/images/car-2.webp',
+        alt: 'Daily Commute Rides in Kerala',
+        tag: '🔁 Daily Commute',
+        title: 'Daily Commute Rides',
+        desc: 'Start and end your workday right with reliable, on-time cab service. Perfect for professionals who need a dependable ride every single day.',
+        delay: 'reveal-delay-1',
+    },
+    {
+        img: 'assets/images/car-7.webp',
+        alt: 'Comfortable Vehicles with Stark Cabs',
+        tag: '🚗 Premium Comfort',
+        title: 'Comfortable Vehicles',
+        desc: 'Travel in clean, well-maintained vehicles driven by professional, courteous drivers. Your comfort is our priority on every trip, no matter the distance.',
+        delay: '',
+    },
+    {
+        img: 'assets/images/car-8.webp',
+        alt: '24/7 Cab Availability Kerala',
+        tag: '🌙 Round the Clock',
+        title: 'Night & Late Rides',
+        desc: 'Need a cab late at night or early in the morning? Stark Cabs is available 24/7 with verified drivers ready to safely get you home at any hour.',
+        delay: 'reveal-delay-1',
+    },
 ];
 
 

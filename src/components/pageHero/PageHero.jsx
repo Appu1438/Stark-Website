@@ -24,19 +24,23 @@ const PageHero = ({
       <div className="page-hero-inner">
         {/* Breadcrumb */}
         <nav className="breadcrumb" aria-label="Breadcrumb">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
+          <ul className="breadcrumb-list">
 
-          <li>
-            <span className="breadcrumb-sep">›</span>
-          </li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
 
-          <li>
-            <span className="breadcrumb-current">
-              {currentPage}
-            </span>
-          </li>
+            <li aria-hidden="true">
+              <span className="breadcrumb-sep">›</span>
+            </li>
+
+            <li>
+              <span className="breadcrumb-current">
+                {currentPage}
+              </span>
+            </li>
+
+          </ul>
         </nav>
 
         {/* Title */}
