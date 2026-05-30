@@ -184,21 +184,26 @@ export default function Contact() {
                         <form className="contact-form reveal reveal-delay-1" onSubmit={handleSubmit}>
                             <div className="form-row">
                                 <div className="form-group">
-                                    <label>Your Name</label>
-                                    <input type="text" name="name" placeholder="e.g. Arjun Nair" required />
+                                    <label htmlFor="name">Your Name</label>
+                                    <input id="name" type="text" name="name" placeholder="e.g. Arjun Nair" required />
                                 </div>
                                 <div className="form-group">
-                                    <label>Phone Number</label>
-                                    <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" required />
+                                    <label htmlFor="phone">Phone Number</label>
+                                    <input id="phone" type="tel" name="phone" placeholder="+91 XXXXX XXXXX" required />
                                 </div>
                             </div>
                             <div className="form-group">
-                                <label>Email Address</label>
-                                <input type="email" name="email" placeholder="you@example.com" required />
+                                <label htmlFor="email">Email Address</label>
+                                <input id="email" type="email" name="email" placeholder="you@example.com" required />
                             </div>
                             <div className="form-group">
-                                <label>I'm contacting about</label>
-                                <select name="subject" required defaultValue="">
+                                <label htmlFor="subject">I'm contacting about</label>
+                                <select
+                                    id="subject"
+                                    name="subject"
+                                    required
+                                    defaultValue=""
+                                >
                                     <option value="" disabled>Select a topic</option>
                                     <option value="Ride Booking Inquiry">Ride Booking Inquiry</option>
                                     <option value="Driver Registration">Driver Registration</option>
@@ -208,8 +213,8 @@ export default function Contact() {
                                 </select>
                             </div>
                             <div className="form-group">
-                                <label>Your Message</label>
-                                <textarea rows="5" name="message" placeholder="Tell us how we can help you..." required />
+                                <label htmlFor="message">Your Message</label>
+                                <textarea id="message" rows="5" name="message" placeholder="Tell us how we can help you..." required />
                             </div>
                             <div className="form-submit">
                                 <button type="submit" className="btn-primary form-submit-btn">Send Message</button>

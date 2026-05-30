@@ -317,3 +317,12 @@
   .map-section { padding: 0 0 60px; }
   .quick-bar { padding: 0 0 60px; }
 }
+
+.info-value a,
+.quick-item a{
+  min-height:44px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  padding:6px 0;
+}
