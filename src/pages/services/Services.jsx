@@ -83,7 +83,7 @@ export default function Services() {
         title={"Our Cab"}
         highlight={"Services"}
         currentPage={'Services'}
-        backgroundImage={'assets/images/bg_2.jpg'}
+        backgroundImage={'assets/images/bg_2.webp'}
 
       />
 

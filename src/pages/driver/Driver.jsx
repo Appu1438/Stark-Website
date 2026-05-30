@@ -111,13 +111,13 @@ export default function Driver() {
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://starkcabs.in/driver" />
 
-          <link rel="icon" href="/assets/images/favicon.png" sizes="any" />
-  <meta property="og:image" content="https://starkcabs.in/assets/images/favicon.png" />
-  <meta property="og:image:width" content="512" />
-  <meta property="og:image:height" content="512" />
-  <meta property="og:image:type" content="image/png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://starkcabs.in/assets/images/favicon.png" />
+        <link rel="icon" href="/assets/images/favicon.png" sizes="any" />
+        <meta property="og:image" content="https://starkcabs.in/assets/images/favicon.png" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+        <meta property="og:image:type" content="image/png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://starkcabs.in/assets/images/favicon.png" />
 
       </Helmet>
 
@@ -128,7 +128,7 @@ export default function Driver() {
         highlight={"Stark"}
         subTitle={"Cabs"}
         currentPage={'Drive With Us'}
-        backgroundImage={'assets/images/bg_2.jpg'}
+        backgroundImage={'assets/images/bg_2.webp'}
 
       />
 
@@ -146,7 +146,7 @@ export default function Driver() {
               </div>
             </div>
             <div ref={bannerImgRef} className="driver-banner-img anim-fade-right">
-              <img src="assets/images/bg_1.jpg" alt="Stark Cabs Driver Partner" />
+              <img src="assets/images/bg_1.webp" alt="Stark Cabs Driver Partner" />
               <div className="driver-banner-img-overlay" />
             </div>
           </div>
@@ -226,7 +226,7 @@ export default function Driver() {
 
           {activeTab === "description" && (
             <div key={`desc-${tabKey}`} className="drv-desc-grid tab-panel-enter">
-              <div className="drv-desc-img"><img src="assets/images/bg_1.jpg" alt="Stark Driver App" /></div>
+              <div className="drv-desc-img"><img src="assets/images/bg_1.webp" alt="Stark Driver App" /></div>
               <div className="drv-desc-content" style={{ animationDelay: "0.1s" }}>
                 <span className="section-label">About the Driver App</span>
                 <h3>Built for Drivers,<br />Powered by Smart Tech</h3>

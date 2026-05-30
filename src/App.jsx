@@ -1,4 +1,4 @@
-import { Suspense, lazy, useEffect, useState } from 'react';
+import { Suspense, lazy} from 'react';
 import { Routes, Route } from 'react-router-dom';
 import PageLoader from './components/pageLoader/PageLoader';
 import NotFound from './pages/notFound/NotFound';
@@ -14,21 +14,7 @@ const Blog = lazy(() => import('./pages/blog/Blog'));
 const Contact = lazy(() => import('./pages/contact/Contact'));
 
 export default function App() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  // Show loader for 2 seconds
-  if (loading && !navigator.userAgent.includes("ReactSnap")) {
-    return <PageLoader />;
-  }
-
+ 
   return (
       <Suspense fallback={<PageLoader />}>
         <main>

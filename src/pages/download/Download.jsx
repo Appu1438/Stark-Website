@@ -67,13 +67,13 @@ export default function Download() {
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://starkcabs.in/download" />
 
-          <link rel="icon" href="/assets/images/favicon.png" sizes="any" />
-  <meta property="og:image" content="https://starkcabs.in/assets/images/favicon.png" />
-  <meta property="og:image:width" content="512" />
-  <meta property="og:image:height" content="512" />
-  <meta property="og:image:type" content="image/png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://starkcabs.in/assets/images/favicon.png" />
+        <link rel="icon" href="/assets/images/favicon.png" sizes="any" />
+        <meta property="og:image" content="https://starkcabs.in/assets/images/favicon.png" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+        <meta property="og:image:type" content="image/png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://starkcabs.in/assets/images/favicon.png" />
 
       </Helmet>
 
@@ -82,7 +82,7 @@ export default function Download() {
         title={"Download Our"}
         highlight={"App"}
         currentPage={'Download App'}
-        backgroundImage={'assets/images/bg_2.jpg'}
+        backgroundImage={'assets/images/bg_2.webp'}
 
       />
 
@@ -106,7 +106,7 @@ export default function Download() {
               </div>
             </div>
             <div className="app-hero-img">
-              <img src="assets/images/bg_3.jpg" alt="Stark Rider App - Book Rides in Kerala" />
+              <img src="assets/images/bg_3.webp" alt="Stark Rider App - Book Rides in Kerala" />
               <div className="app-hero-img-overlay" />
             </div>
           </div>
@@ -158,7 +158,7 @@ export default function Download() {
           {activeTab === "description" && (
             <div className="desc-grid">
               <div className="desc-img reveal">
-                <img src="assets/images/bg_3.jpg" alt="Stark Rider App" />
+                <img src="assets/images/bg_3.webp" alt="Stark Rider App" />
               </div>
               <div className="desc-content reveal reveal-delay-1">
                 <span className="section-label">About the Rider App</span>

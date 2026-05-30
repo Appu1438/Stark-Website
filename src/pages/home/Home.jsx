@@ -95,50 +95,25 @@ function IconAndroid() {
 function useScrollReveal() {
     useEffect(() => {
         const observer = new IntersectionObserver(
-            (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
-            { threshold: 0.10 }
+            (entries) => {
+                entries.forEach((e) => {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('visible');
+                        observer.unobserve(e.target);
+                    }
+                });
+            },
+            { threshold: 0.1 }
         );
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        const elements = document.querySelectorAll('.reveal');
+
+        elements.forEach((el) => observer.observe(el));
+
         return () => observer.disconnect();
     }, []);
 }
 
-
-
-// function formatDate(d) {
-//     return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
-// }
-
-const today = new Date();
-const d1 = new Date(); d1.setDate(today.getDate() - 1);
-const d2 = new Date(); d2.setDate(today.getDate() - 2);
-
-// const BLOG_POSTS = [
-//     {
-//         img: 'https://res.cloudinary.com/starkcab/image/upload/v1776416323/Website%20Images/image_1_osuj00.jpg',
-//         alt: 'Best ride booking in Kerala',
-//         tag: 'Tips',
-//         date: formatDate(today),
-//         title: 'Why Stark Cabs is the Best Ride Booking Service in Kerala',
-//         excerpt: 'Fast, reliable rides with real-time tracking and verified drivers. Here\'s what sets us apart from other cab services.',
-//     },
-//     {
-//         img: 'https://res.cloudinary.com/starkcab/image/upload/v1776416322/Website%20Images/image_2_i0vwdo.jpg',
-//         alt: 'Safe taxi services Kerala',
-//         tag: 'Safety',
-//         date: formatDate(d1),
-//         title: 'Safe and Affordable Taxi Services in Kerala',
-//         excerpt: 'Travel safely across Kerala with Stark Cabs. Our drivers and vehicles ensure a comfortable, reliable experience.',
-//     },
-//     {
-//         img: 'https://res.cloudinary.com/starkcab/image/upload/v1776416524/Website%20Images/bg_1_dnrffp.jpg',
-//         alt: 'Ride booking apps changing transportation',
-//         tag: 'Technology',
-//         date: formatDate(d2),
-//         title: 'How Ride Booking Apps Are Changing Transportation',
-//         excerpt: 'Platforms like Stark Cabs are transforming local transportation in Kerala with smart tech and instant driver matching.',
-//     },
-// ];
 
 /* ─────────────────────────────────────────
    Stars helper
@@ -188,7 +163,14 @@ export default function Home() {
 
             {/* ── HERO ── */}
             <section className="hero" id="home">
-                <div className="hero-bg" aria-hidden="true" />
+                {/* <div className="hero-bg" aria-hidden="true" /> */}
+                <img
+                    src="/assets/images/hero_bg_1.webp"
+                    alt="Stark Cabs Kerala"
+                    className="hero-bg"
+                    fetchPriority="high"
+                    decoding="async"
+                />
                 <div className="hero-gradient" aria-hidden="true" />
                 <div className="hero-orb" aria-hidden="true" />
                 <div className="hero-inner">
@@ -264,7 +246,7 @@ export default function Home() {
                     <div className="about-grid">
                         {/* Image */}
                         <div className="about-img-wrap reveal">
-                            <img src="assets/images/about.jpg" alt="About Stark Cabs – Reliable cab service in Kerala" />
+                            <img src="assets/images/about.webp" alt="About Stark Cabs – Reliable cab service in Kerala" />
                             <div className="about-img-overlay" aria-hidden="true" />
                             <div className="about-tag">
                                 <div className="about-tag-icon"><IconCheck /></div>
@@ -385,7 +367,10 @@ export default function Home() {
                     <div className="why-grid">
                         {WHY_CARDS.map((c, i) => (
                             <div key={c.title} className={`why-card reveal${i % 4 > 0 ? ` reveal-delay-${i % 4}` : ''}`}>
-                                <img src={c.img} alt={c.title} className="why-img" />
+                                <img src={c.img} alt={c.title}
+                                    className="why-img"
+                                    loading="lazy"
+                                    decoding="async" />
                                 <div className="why-body">
                                     <h3>{c.title}</h3>
                                     <p>{c.desc}</p>

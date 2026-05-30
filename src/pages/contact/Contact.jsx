@@ -78,13 +78,13 @@ export default function Contact() {
                 <meta property="og:type" content="website" />
                 <link rel="canonical" href="https://starkcabs.in/contact" />
 
-                  <link rel="icon" href="/assets/images/favicon.png" sizes="any" />
-  <meta property="og:image" content="https://starkcabs.in/assets/images/favicon.png" />
-  <meta property="og:image:width" content="512" />
-  <meta property="og:image:height" content="512" />
-  <meta property="og:image:type" content="image/png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://starkcabs.in/assets/images/favicon.png" />
+                <link rel="icon" href="/assets/images/favicon.png" sizes="any" />
+                <meta property="og:image" content="https://starkcabs.in/assets/images/favicon.png" />
+                <meta property="og:image:width" content="512" />
+                <meta property="og:image:height" content="512" />
+                <meta property="og:image:type" content="image/png" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:image" content="https://starkcabs.in/assets/images/favicon.png" />
 
             </Helmet>
 
@@ -93,7 +93,7 @@ export default function Contact() {
                 title={"Get in"}
                 highlight={"Touch"}
                 currentPage={'Contact'}
-                backgroundImage={'assets/images/bg_2.jpg'}
+                backgroundImage={'assets/images/bg_2.webp'}
 
             />
 
