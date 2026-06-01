@@ -128,7 +128,7 @@ export default function Driver() {
         highlight={"Stark"}
         subTitle={"Cabs"}
         currentPage={'Drive With Us'}
-        backgroundImage={'assets/images/bg_2.webp'}
+        backgroundImage={'https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315363/bg_2_xyc6ne.webp'}
 
       />
 
@@ -146,7 +146,7 @@ export default function Driver() {
               </div>
             </div>
             <div ref={bannerImgRef} className="driver-banner-img anim-fade-right">
-              <img src="assets/images/bg_1.webp" alt="Stark Cabs Driver Partner" />
+              <img src="https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315362/bg_1_iqiaom.webp" alt="Stark Cabs Driver Partner" />
               <div className="driver-banner-img-overlay" />
             </div>
           </div>

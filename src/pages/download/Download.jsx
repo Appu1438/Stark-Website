@@ -82,7 +82,7 @@ export default function Download() {
         title={"Download Our"}
         highlight={"App"}
         currentPage={'Download App'}
-        backgroundImage={'assets/images/bg_2.webp'}
+        backgroundImage={'https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315363/bg_2_xyc6ne.webp'}
 
       />
 
@@ -106,7 +106,7 @@ export default function Download() {
               </div>
             </div>
             <div className="app-hero-img">
-              <img src="assets/images/bg_3.webp" alt="Stark Rider App - Book Rides in Kerala" />
+              <img src="https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315362/bg_3_nyjtfd.webp" alt="Stark Rider App - Book Rides in Kerala" />
               <div className="app-hero-img-overlay" />
             </div>
           </div>

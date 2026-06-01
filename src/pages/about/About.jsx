@@ -158,7 +158,7 @@ export default function About() {
         highlight={'Stark'}
         subTitle={'Cabs'}
         currentPage={"About Us"}
-        backgroundImage={'assets/images/bg_2.webp'}
+        backgroundImage={'https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315363/bg_2_xyc6ne.webp'}
       />
 
       {/* ── ABOUT INTRO ── */}
@@ -167,7 +167,7 @@ export default function About() {
           <div className="about-grid">
             {/* Image */}
             <div className="about-img-wrap reveal">
-              <img src="assets/images/about.webp" alt="About Stark Cabs – Reliable cab service in Kerala" />
+              <img src="https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315362/about_ttgik2.webp" alt="About Stark Cabs – Reliable cab service in Kerala" />
               <div className="about-img-overlay" aria-hidden="true" />
               <div className="about-tag">
                 <div className="about-tag-icon"><IconCheck /></div>

@@ -101,7 +101,7 @@ export default function Blog() {
                     title={"Our"}
                     highlight={"Blogs"}
                     currentPage={'Blog'}
-                    backgroundImage={'assets/images/bg_2.webp'}
+                    backgroundImage={'https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315363/bg_2_xyc6ne.webp'}
 
                 />
 

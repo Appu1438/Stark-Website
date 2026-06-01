@@ -48,56 +48,56 @@ export const SERVICES = [
 
 export const WHY_CARDS = [
     {
-        img: 'assets/images/car-1.webp',
+        img: 'https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315362/car-1_vtajtb.webp',
         alt: 'Fast ride booking with Stark Cabs Kerala',
         title: '⚡ Fast Ride Booking',
         desc: 'Book a cab instantly with quick driver matching anywhere in Kerala.'
     },
 
     {
-        img: 'assets/images/car-2.webp',
+        img: 'https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315363/car-2_zwnoa9.webp',
         alt: 'Affordable taxi pricing in Kerala with Stark Cabs',
         title: '💰 Affordable Pricing',
         desc: 'Competitive fares with transparent pricing — no hidden charges.'
     },
 
     {
-        img: 'assets/images/car-3.webp',
+        img: 'https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315363/car-3_rulung.webp',
         alt: 'Verified Stark Cabs drivers for safe travel',
         title: '✅ Verified Drivers',
         desc: 'All Stark drivers are background-checked for your safety.'
     },
 
     {
-        img: 'assets/images/car-4.webp',
+        img: 'https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315363/car-4_iiu01w.webp',
         alt: 'Real-time taxi tracking in Stark Cabs app',
         title: '📍 Real-Time Tracking',
         desc: 'Track your ride live with GPS and instant driver location updates.'
     },
 
     {
-        img: 'assets/images/car-5.webp',
+        img: 'https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315363/car-5_mv03ql.webp',
         alt: 'Local city taxi rides in Kerala',
         title: '🏙️ Local City Rides',
         desc: 'Quick rides within Kerala for daily commutes, shopping, and more.'
     },
 
     {
-        img: 'assets/images/car-6.webp',
+        img: 'https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315362/car-6_qwvjyr.webp',
         alt: 'Airport pickup and drop taxi service in Kerala',
         title: '✈️ Airport Transfers',
         desc: 'Reliable pickup and drop services to and from nearby airports.'
     },
 
     {
-        img: 'assets/images/car-7.webp',
+        img: 'https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315363/car-7_c9y8wx.webp',
         alt: 'Comfortable and clean vehicles from Stark Cabs',
         title: '🚗 Comfortable Vehicles',
         desc: 'Clean, well-maintained cars with professional, courteous drivers.'
     },
 
     {
-        img: 'assets/images/car-8.webp',
+        img: 'https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315364/car-8_rxpera.webp',
         alt: '24 hour taxi booking service in Kerala',
         title: '🌙 24/7 Availability',
         desc: 'Book Stark Cabs any time of day or night — we\'re always ready.'
@@ -106,7 +106,7 @@ export const WHY_CARDS = [
 
 export const DETAIL_SERVICES = [
     {
-        img: 'assets/images/car-5.webp',
+        img: 'https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315363/car-5_mv03ql.webp',
         alt: 'Local City Rides in Kerala',
         tag: '🏙️ City Rides',
         title: 'Local City Rides',
@@ -114,7 +114,7 @@ export const DETAIL_SERVICES = [
         delay: '',
     },
     {
-        img: 'assets/images/car-6.webp',
+        img: 'https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315362/car-6_qwvjyr.webp',
         alt: 'Airport Transfers from Kerala',
         tag: '✈️ Airport',
         title: 'Airport Transfers',
@@ -122,7 +122,7 @@ export const DETAIL_SERVICES = [
         delay: 'reveal-delay-1',
     },
     {
-        img: 'assets/images/car-1.webp',
+        img: 'https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315362/car-1_vtajtb.webp',
         alt: 'Outstation Trips from Kerala',
         tag: '🛣️ Outstation',
         title: 'Outstation Trips',
@@ -130,7 +130,7 @@ export const DETAIL_SERVICES = [
         delay: '',
     },
     {
-        img: 'assets/images/car-2.webp',
+        img: 'https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315363/car-2_zwnoa9.webp',
         alt: 'Daily Commute Rides in Kerala',
         tag: '🔁 Daily Commute',
         title: 'Daily Commute Rides',
@@ -138,7 +138,7 @@ export const DETAIL_SERVICES = [
         delay: 'reveal-delay-1',
     },
     {
-        img: 'assets/images/car-7.webp',
+        img: 'https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315363/car-7_c9y8wx.webp',
         alt: 'Comfortable Vehicles with Stark Cabs',
         tag: '🚗 Premium Comfort',
         title: 'Comfortable Vehicles',
@@ -146,7 +146,7 @@ export const DETAIL_SERVICES = [
         delay: '',
     },
     {
-        img: 'assets/images/car-8.webp',
+        img: 'https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315364/car-8_rxpera.webp',
         alt: '24/7 Cab Availability Kerala',
         tag: '🌙 Round the Clock',
         title: 'Night & Late Rides',
