@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./download.css";
 import { Helmet } from "react-helmet-async";
 import PageHero from "../../components/pageHero/PageHero";
+import { TESTIMONIALS } from "../../themes/constants/testimonials";
 
 function useReveal() {
   useEffect(() => {
@@ -18,18 +19,12 @@ function useReveal() {
   }, []);
 }
 
-const TABS = ["features", "description", "reviews"];
+
 const FEATURES = [
   "Quick Ride Booking", "Live GPS Tracking", "Verified Safe Drivers", "Transparent Pricing",
   "Ride History", "Driver Ratings", "Secure Booking", "Multiple Locations", "Instant Notifications",
   "Easy Interface", "Fast Driver Matching", "Comfortable Rides", "Affordable Travel",
   "Secure Platform", "24/7 Availability",
-];
-const REVIEWS = [
-  { initials: "AN", name: "Arjun Nair", date: "18 March 2026", color: "", text: "Booking rides with the Stark Rider App is very simple. Drivers arrive quickly and the ride experience has always been smooth. Highly recommend!" },
-  { initials: "SM", name: "Sneha Menon", date: "14 March 2026", color: "linear-gradient(135deg,#e65c00,#f9d423)", text: "The app interface is clean and easy to use. I can book a taxi within seconds and track the driver live on the map. Best taxi app in Kerala!" },
-  { initials: "VR", name: "Vishnu Raj", date: "9 March 2026", color: "linear-gradient(135deg,#11998e,#38ef7d)", text: "Very reliable taxi service in Kerala. The pricing is fair and drivers are friendly and professional every single time I travel." },
-  { initials: "AS", name: "Athira S", date: "3 March 2026", color: "linear-gradient(135deg,#8e2de2,#4a00e0)", text: "I use Stark Cabs for my daily travel. The drivers are polite, the rides are comfortable, and the app makes everything effortless. Love it!" },
 ];
 
 const STRIP_ITEMS = [
@@ -137,7 +132,7 @@ export default function Download() {
             <p className="section-desc">The Stark Rider App is designed to make booking a cab in Kerala as simple and quick as possible.</p>
           </div>
           <div className="tabs reveal reveal-delay-1">
-            {TABS.map(t => (
+            {["features", "description", "reviews"].map(t => (
               <button key={t} className={`tab-btn${activeTab === t ? " active" : ""}`} onClick={() => setActiveTab(t)}>
                 {t === "features" ? "App Features" : t === "description" ? "Description" : "Rider Reviews"}
               </button>
@@ -147,7 +142,7 @@ export default function Download() {
           {activeTab === "features" && (
             <div className="feat-grid">
               {FEATURES.map((f, i) => (
-                <div className={`feat-item reveal reveal-delay-${i % 3}`} key={i}>
+                <div className={`feat-item reveal visible reveal-delay-${i % 3}`} key={i}>
                   <div className="feat-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#F96D00" strokeWidth="3"><polyline points="20 6 9 17 4 12" /></svg></div>
                   <span>{f}</span>
                 </div>
@@ -157,10 +152,10 @@ export default function Download() {
 
           {activeTab === "description" && (
             <div className="desc-grid">
-              <div className="desc-img reveal">
-                <img src="assets/images/bg_3.webp" alt="Stark Rider App" />
+              <div className="desc-img reveal visible">
+                <img src="https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315362/bg_3_nyjtfd.webp" alt="Stark Rider App" />
               </div>
-              <div className="desc-content reveal reveal-delay-1">
+              <div className="desc-content reveal visible reveal-delay-1">
                 <span className="section-label">About the Rider App</span>
                 <h3>Your Travel Partner<br />Across Kerala</h3>
                 <p>The Stark Rider App makes travel across Kerala simple and convenient. With just a few taps, you can book a ride, connect with nearby verified drivers and reach your destination safely.</p>
@@ -173,8 +168,8 @@ export default function Download() {
 
           {activeTab === "reviews" && (
             <div className="reviews-grid">
-              {REVIEWS.map((r, i) => (
-                <div className={`review-card reveal reveal-delay-${i % 2}`} key={i}>
+              {TESTIMONIALS.slice(0, 4).map((r, i) => (
+                <div className={`review-card reveal visible reveal-delay-${i % 2}`} key={i}>
                   <div className="review-stars">{"★★★★★".split("").map((s, j) => <span key={j} className="review-star">{s}</span>)}</div>
                   <p className="review-text">{r.text}</p>
                   <div className="review-author">
@@ -192,12 +187,12 @@ export default function Download() {
       <section className="rating-section">
         <div className="container">
           <div className="rating-grid">
-            <div className="rating-big reveal">
+            <div className="rating-big reveal visible">
               <div className="rating-number">4.8<span>★</span></div>
               <div className="rating-stars-big">{"★★★★".split("").map((s, i) => <span key={i} className="rating-star-big">{s}</span>)}<span className="rating-star-big" style={{ opacity: 0.4 }}>★</span></div>
               <div className="rating-count">Based on 35 Reviews</div>
             </div>
-            <div className="rating-bars reveal reveal-delay-1">
+            <div className="rating-bars reveal visible reveal-delay-1">
               <div style={{ marginBottom: "20px" }}>
                 <span className="section-label">App Ratings</span>
                 <h3 className="rating-title">Riders Love<br />Stark Cabs</h3>

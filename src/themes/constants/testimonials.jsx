@@ -7,3 +7,9 @@ export const TESTIMONIALS = [
   { initials: 'VR', name: 'Vishnu Raj',     role: 'Entrepreneur',      text: 'Affordable pricing and drivers arrive quickly. Stark Cabs is now my go-to taxi service in Kerala — no other app comes close.', grad: 'linear-gradient(135deg,#F96D00,#ff5500)' },
   { initials: 'PV', name: 'Priya Varma',    role: 'Doctor',            text: 'I love how easy the Stark Rider App is to use. One tap and my ride is confirmed. The real-time tracking gives me peace of mind every journey.', grad: 'linear-gradient(135deg,#1a1a2e,#16213e)' },
 ];
+
+export const DRIVER_REVIEWS = [
+  { initials: "RK", name: "Rajesh Kumar", date: "12 March 2026", color: "", text: "Driving with Stark Cabs has been a great experience. The driver app is simple and ride requests come regularly during the day. Really happy with the earnings." },
+  { initials: "SP", name: "Suresh Pillai", date: "8 March 2026", color: "linear-gradient(135deg,#e65c00,#f9d423)", text: "The navigation and trip management features help a lot while driving. I can easily track my earnings and accept rides nearby. The app is very easy to use." },
+  { initials: "AN", name: "Anil Nair", date: "2 March 2026", color: "linear-gradient(135deg,#11998e,#38ef7d)", text: "Flexible working hours and good earning opportunities. Stark Cabs is a reliable platform for drivers in Kerala. I recommend it to anyone looking to earn." },
+];

@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import "./driver.css";
 import { Helmet } from "react-helmet-async";
 import PageHero from "../../components/pageHero/PageHero";
+import { DRIVER_REVIEWS } from "../../themes/constants/testimonials";
 
 /* ─────────────────────────────────────────────────────────────────────────
    useReveal — lightweight IntersectionObserver hook.
@@ -35,11 +36,7 @@ const DRIVER_FEATURES = [
   "Ride Notifications", "Driver Ratings", "Route Optimisation", "Fast Trip Matching",
   "Transparent Earnings", "Reliable Platform", "24/7 Driver Support",
 ];
-const DRIVER_REVIEWS = [
-  { initials: "RK", name: "Rajesh Kumar", date: "12 March 2026", color: "", text: "Driving with Stark Cabs has been a great experience. The driver app is simple and ride requests come regularly during the day. Really happy with the earnings." },
-  { initials: "SP", name: "Suresh Pillai", date: "8 March 2026", color: "linear-gradient(135deg,#e65c00,#f9d423)", text: "The navigation and trip management features help a lot while driving. I can easily track my earnings and accept rides nearby. The app is very easy to use." },
-  { initials: "AN", name: "Anil Nair", date: "2 March 2026", color: "linear-gradient(135deg,#11998e,#38ef7d)", text: "Flexible working hours and good earning opportunities. Stark Cabs is a reliable platform for drivers in Kerala. I recommend it to anyone looking to earn." },
-];
+
 const REQUIREMENTS = [
   { icon: "🪪", title: "Valid Driving Licence", desc: "A valid commercial or private vehicle driving licence issued by the relevant authority in India." },
   { icon: "🚗", title: "A Registered Vehicle", desc: "Your own registered vehicle in good working condition — car or auto — with valid insurance and registration documents." },
@@ -226,7 +223,7 @@ export default function Driver() {
 
           {activeTab === "description" && (
             <div key={`desc-${tabKey}`} className="drv-desc-grid tab-panel-enter">
-              <div className="drv-desc-img"><img src="assets/images/bg_1.webp" alt="Stark Driver App" /></div>
+              <div className="drv-desc-img"><img src="https://res.cloudinary.com/stark-and-nfly/image/upload/v1780315362/bg_1_iqiaom.webp" alt="Stark Driver App" /></div>
               <div className="drv-desc-content" style={{ animationDelay: "0.1s" }}>
                 <span className="section-label">About the Driver App</span>
                 <h3>Built for Drivers,<br />Powered by Smart Tech</h3>
