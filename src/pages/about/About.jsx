@@ -144,7 +144,7 @@ export default function About() {
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://starkcabs.in/about" />
 
-        <link rel="icon" href="/assets/images/favicon.png" sizes="any" />
+        <link rel="icon" href="https://starkcabs.in/assets/images/favicon.png" sizes="any" />
         <meta property="og:image" content="https://starkcabs.in/assets/images/favicon.png" />
         <meta property="og:image:width" content="512" />
         <meta property="og:image:height" content="512" />
