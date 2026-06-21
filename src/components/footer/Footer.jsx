@@ -128,8 +128,7 @@ export default function Footer() {
         <div className="footer-bottom">
           <p>&copy; {year} Stark Cabs. All rights reserved.</p>
           <div className="footer-bottom-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+            Crafted with<span className="footer-heart">♥</span>by Adithyan
           </div>
         </div>
       </div>
